@@ -1,6 +1,7 @@
 package edu.weber.w01311060.designstuff;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -16,6 +17,9 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         Button btn = findViewById(R.id.btnLaunch);
         TextView timerText = findViewById(R.id.timerText);
